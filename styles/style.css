@@ -1,3 +1,11 @@
+:root {
+  --main-font: 'Raleway';
+  --accent-font: 'STYX Two Text';
+  --bg-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+}
+
 *,
 *::before,
 *::after {
@@ -7,6 +15,9 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
+  color: var(--text-color, #312A4E);
+  font-family: var(--main-font, sans-serif);
+  border-color: var(--bg-color, #F3EFEC);
 }
 
 p,
@@ -19,4 +30,29 @@ ol,
 li,
 figure {
   margin: 0;
+}
+
+.heading {
+  font-family: var(--accent-font, serif);
+  font-weight: 600;
+  line-height: 0.9;  
+  text-align: center;
+}
+
+.content-section {
+  padding: 0 5vi;
+}
+
+.header {
+  padding-block-start: 10%;
+}
+
+.header__title {
+  margin-block-end: 40px;
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
+.content__title {
+  margin: 7% 0 2.5%;
+  font-size: 30px;
 }
